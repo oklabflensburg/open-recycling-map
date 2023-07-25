@@ -1,5 +1,6 @@
 certifi==2023.7.22
 charset-normalizer==3.2.0
+click==8.1.6
 geojson==3.0.1
 idna==3.4
 lxml==4.9.3
