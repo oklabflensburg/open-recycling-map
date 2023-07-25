@@ -34,6 +34,7 @@ def main(json_file, geojson_file):
         point = Point((float(o['coords'][0]), float(o['coords'][1])))
             
         properties = {
+            'type': o['type'],
             'location': o['location'],
             'details': o['details']
         }

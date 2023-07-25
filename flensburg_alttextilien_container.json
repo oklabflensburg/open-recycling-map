@@ -1,5 +1,6 @@
 [
     {
+        "type": "recycling-bank",
         "location": "Adelbyer Kirchenweg",
         "details": "ggü. von Hausnr.115",
         "coords": [
@@ -8,6 +9,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Alter Husumer Weg",
         "details": "Ecke Jägerberg / Supermarkt",
         "coords": [
@@ -16,6 +18,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Alter Kupfermühlenweg",
         "details": "Ecke Sonderburger Straße",
         "coords": [
@@ -24,6 +27,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Am Lautrupsbach",
         "details": "Parkplatz",
         "coords": [
@@ -32,6 +36,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Am Ochsenmarkt",
         "details": "bei Hausnr. 27 / Parkstreifen",
         "coords": [
@@ -40,6 +45,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Am Soot",
         "details": "bei Hausnr. 20 unter Laterne",
         "coords": [
@@ -48,6 +54,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Apenrader Straße",
         "details": "Kiosk / Ecke Ostseebadweg",
         "coords": [
@@ -56,6 +63,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Blücherstraße",
         "details": "bei Hausnr. 9",
         "coords": [
@@ -64,6 +72,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Bredstedter Straße",
         "details": "in der Kurve Grünstreifen",
         "coords": [
@@ -72,6 +81,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Eckenerstraße",
         "details": "ggü. Hausnr. 67",
         "coords": [
@@ -80,6 +90,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Eckenerstraße",
         "details": "Ecke Harrisleer Straße",
         "coords": [
@@ -88,6 +99,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Elbehof",
         "details": "Ecke Elbestraße",
         "coords": [
@@ -96,6 +108,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Elbestraße",
         "details": "bei Hausnr. 29 im Parkstreifen ggü. Schule ",
         "coords": [
@@ -104,6 +117,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Engelsbyer Straße",
         "details": "Einkaufszentrum (hinter 'Textildiscounter')",
         "coords": [
@@ -112,6 +126,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Freyastraße",
         "details": "Parkplatz",
         "coords": [
@@ -120,6 +135,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Friedhofstraße",
         "details": "Ecke Nerongsallee (ggü. Mühlenfriedhof)",
         "coords": [
@@ -128,6 +144,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Fruerlunder Straße",
         "details": "ggü. Hausnr. 78 in Sackgasse hinter Tankstelle",
         "coords": [
@@ -136,6 +153,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Fruerlundholz",
         "details": "ggü. Hausnr. 33",
         "coords": [
@@ -144,6 +162,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Glücksburger Straße",
         "details": "ggü. Hausnr. 94 im Parkstreifen",
         "coords": [
@@ -152,6 +171,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Hesttoft",
         "details": "Ecke Alsterbogen bei Hausnr. 60",
         "coords": [
@@ -160,6 +180,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Hinrich-Ringeringk-Straße",
         "details": "bei Hausnr. 17 / Parkplatz",
         "coords": [
@@ -168,6 +189,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Holzkrugweg",
         "details": "Ecke Ochsenweg",
         "coords": [
@@ -176,6 +198,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Iltishof",
         "details": "Wendeplatz",
         "coords": [
@@ -184,6 +207,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Kauslundhof",
         "details": "Recyclinghof TBZ",
         "coords": [
@@ -192,6 +216,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Kiefernweg",
         "details": "bei Haus Nr. 1-3 / Parkplatz",
         "coords": [
@@ -200,6 +225,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Kleine Lücke",
         "details": "beim Supermarkt",
         "coords": [
@@ -208,6 +234,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Klueser Weg",
         "details": "ggü. Spielplatz / Ecke Waldeckestraße",
         "coords": [
@@ -216,6 +243,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Lornsendamm",
         "details": "Recyclinghof TBZ",
         "coords": [
@@ -224,6 +252,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Marienallee",
         "details": "vor Hausnr. 32",
         "coords": [
@@ -232,6 +261,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Marienhölzungsweg",
         "details": "Ecke Gertrudenstraße",
         "coords": [
@@ -240,6 +270,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Marrensdamm",
         "details": "vor Hausnr. 2 / Sparkasse",
         "coords": [
@@ -248,6 +279,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Marrensdamm",
         "details": "Parkstreifen ggü. von Hausnr. 38",
         "coords": [
@@ -256,6 +288,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Mathildenstraße",
         "details": "Bürgersteig bei Supermarkt",
         "coords": [
@@ -264,6 +297,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Mozartstraße",
         "details": "ggü. Brahmstraße",
         "coords": [
@@ -272,6 +306,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Mürwiker Straße",
         "details": "bei Hausnr. 36",
         "coords": [
@@ -280,6 +315,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Nane-Jürgensen-Weg",
         "details": "Hausnr. 26-30 / Holzverschlag",
         "coords": [
@@ -288,6 +324,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Nikolaiallee",
         "details": "ggü. Hausnr. 6 / Exe Parkplatz",
         "coords": [
@@ -296,6 +333,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Nikolaus-Matthiesen-Straße",
         "details": "ggü. Hausnr. 12 / Parkplatz (Verschlag)",
         "coords": [
@@ -304,6 +342,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Ochsenweg",
         "details": "Ecke an der Friedenskirche",
         "coords": [
@@ -312,6 +351,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Osterallee",
         "details": "Ecke Klosterholzweg",
         "coords": [
@@ -320,6 +360,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Pellwormer Weg",
         "details": "Ecke Alter Husumer Weg",
         "coords": [
@@ -328,6 +369,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Richard-Wagner-Straße",
         "details": "Ecke Beethovenstraße",
         "coords": [
@@ -336,6 +378,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Schiffbrücke",
         "details": "Schifffahrtsmuseum (ggü. Hausnr. 36 im Verschlag) ",
         "coords": [
@@ -344,6 +387,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Schiffbrücke",
         "details": "FWN-Parkplatz (ggü. Hausnr. 63 im Verschlag)",
         "coords": [
@@ -352,6 +396,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Schleswiger Straße",
         "details": "Ecke Tegelbark / Parkplatz",
         "coords": [
@@ -360,6 +405,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Schleswiger Straße",
         "details": "Hausnr. 95a / Recyclinghof (TBZ)",
         "coords": [
@@ -368,6 +414,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Schulze-Delitzsch-Straße",
         "details": "Ecke Kanzleistraße im Parkstreifen ggü. Garagenhof",
         "coords": [
@@ -376,6 +423,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Selckstraße",
         "details": "Parkstreifen öffentliche Toiletten",
         "coords": [
@@ -384,6 +432,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Solitüder Straße",
         "details": "ggü. Solitüder Bogen",
         "coords": [
@@ -392,6 +441,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "St.-Jürgen-Straße",
         "details": "Ecke Friedastraße",
         "coords": [
@@ -400,6 +450,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Südergraben",
         "details": "Am Lutherpark / Ecke Friedrichstraße",
         "coords": [
@@ -408,6 +459,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Sünderuper Weg",
         "details": "Parkstreifen vor den Wohnblocks",
         "coords": [
@@ -416,6 +468,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Thomas-Fincke-Straße",
         "details": "Ecke Kanzleistraße",
         "coords": [
@@ -424,6 +477,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Timm-Kröger-Weg",
         "details": "Hausnr. 28 / im Verschlag",
         "coords": [
@@ -432,6 +486,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Toosbüystraße",
         "details": "ggü. Hausnr. 21 / im Verschlag",
         "coords": [
@@ -440,6 +495,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Trögelsbyer Weg",
         "details": "Ecke Merkurstraße / Parkplatz Supermarkt",
         "coords": [
@@ -448,6 +504,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Twedter Berg",
         "details": "ggü. Hausnr. 6",
         "coords": [
@@ -456,6 +513,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Twedter Feld",
         "details": "Hausnr. 14-16 / Parkstreifen",
         "coords": [
@@ -464,6 +522,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Waitzstraße",
         "details": "ggü. Hausnr. 38 und Zufahrt Berufsfeuerwehr",
         "coords": [
@@ -472,6 +531,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Waldstraße",
         "details": "Parkplatz Agentur für Arbeit",
         "coords": [
@@ -480,6 +540,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Waldstraße",
         "details": "neben Hausnr. 45 am Sportplatz / Parkbucht",
         "coords": [
@@ -488,6 +549,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Wasserlooser Weg",
         "details": "Ecke Am Goldregen",
         "coords": [
@@ -496,6 +558,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Wilhelmstraße",
         "details": "Ecke Augustastraße / Parkplatz",
         "coords": [
@@ -504,6 +567,7 @@
         ]
     },
     {
+        "type": "recycling-bank",
         "location": "Zypressenweg",
         "details": "Parkstreifen ggü. Oleanderhof",
         "coords": [
