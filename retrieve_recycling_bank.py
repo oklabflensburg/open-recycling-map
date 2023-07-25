@@ -39,6 +39,7 @@ for i in a:
             print(ll)
 
             d = {
+                'type': 'recycling-bank',
                 'location': ll[2],
                 'details': ll[3],
                 'coords': [float(ll[1]), float(ll[0])]
