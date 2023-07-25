@@ -17,7 +17,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Adelbyer Kirchenweg",
                 "details": "ggü. Hausnr. 115"
             }
@@ -32,7 +32,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Alter Kupfermühlenweg",
                 "details": "Ecke Sonderburger Straße (vor Aldi)"
             }
@@ -47,7 +47,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Am Lautrupsbach",
                 "details": "Parkplatz"
             }
@@ -62,7 +62,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Am Ostseebad",
                 "details": "Standort von Oktober bis März"
             }
@@ -77,7 +77,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Am Ostseebad",
                 "details": "Standort April bis September"
             }
@@ -92,7 +92,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Am Soot",
                 "details": "bei Hausnr. 20 unter Laterne"
             }
@@ -107,7 +107,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "An der Johannismühle",
                 "details": "in der Kurve"
             }
@@ -122,7 +122,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Apenrader Straße",
                 "details": "gegenüber Aldi"
             }
@@ -137,7 +137,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Brauereiweg",
                 "details": ""
             }
@@ -152,7 +152,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Bredstedter Straße",
                 "details": "in der Kurve Grünstreifen"
             }
@@ -167,7 +167,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Eckenerstraße",
                 "details": "ggü. Hausnr. 67"
             }
@@ -182,7 +182,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Elbehof",
                 "details": "Ecke Elbestraße"
             }
@@ -197,7 +197,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Elbestraße",
                 "details": "bei Hausnr. 29 im Parkstreifen ggü. Schule "
             }
@@ -212,7 +212,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Engelsbyer Straße",
                 "details": "Einkaufszentrum (hinter 'Textildiscounter')"
             }
@@ -227,7 +227,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Ewoldtweg",
                 "details": "Fahrensodde (Schrankendurchfahrt Gastseglerhafen)"
             }
@@ -242,7 +242,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Fichtestraße",
                 "details": ""
             }
@@ -257,7 +257,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Fördepromenade",
                 "details": "ggü. Hausnr. 22"
             }
@@ -272,7 +272,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Fördepromenade",
                 "details": "ggü. Hausnr. 10/12"
             }
@@ -287,7 +287,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Freyastraße",
                 "details": "Parkplatz"
             }
@@ -302,7 +302,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Friedhofstraße",
                 "details": "Ecke Nerongsallee (ggü. Mühlenfriedhof)"
             }
@@ -317,7 +317,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Fruerlunder Straße",
                 "details": "ggü. Hausnr. 78 in Sackgasse hinter Tankstelle"
             }
@@ -332,7 +332,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Fruerlundholz",
                 "details": "ggü. Hausnr. 33"
             }
@@ -347,7 +347,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Gartenstraße",
                 "details": "Haus Nr.9"
             }
@@ -362,7 +362,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Glücksburger Straße",
                 "details": "ggü. Hausnr. 94 im Parkstreifen"
             }
@@ -377,7 +377,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Hafendamm",
                 "details": "Am Kanalschuppen 6 (Gastseglerhafen)"
             }
@@ -392,7 +392,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Harniskai",
                 "details": ""
             }
@@ -407,7 +407,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Hesttoft",
                 "details": "Nr. 31-33"
             }
@@ -422,7 +422,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Holmhof",
                 "details": "Knut-Laward-Straße"
             }
@@ -437,7 +437,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Iltishof",
                 "details": "Wendeplatz"
             }
@@ -452,7 +452,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Jägerweg",
                 "details": "Nummer 1"
             }
@@ -467,7 +467,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Kauslundhof",
                 "details": "Recyclinghof TBZ"
             }
@@ -482,7 +482,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Klueser Weg",
                 "details": "ggü. Spielplatz / Ecke Waldeckestraße"
             }
@@ -497,7 +497,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Langberger Weg",
                 "details": "Citti-Park / Parkplatz"
             }
@@ -512,7 +512,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Lise-Meitner-Straße",
                 "details": ""
             }
@@ -527,7 +527,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Lornsendamm",
                 "details": "Recyclinghof TBZ"
             }
@@ -542,7 +542,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Marienallee",
                 "details": "bei Haus Nr. 43"
             }
@@ -557,7 +557,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Marienhölzungsweg",
                 "details": "Ecke Gertrudenstraße"
             }
@@ -572,7 +572,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Marienhölzungsweg",
                 "details": ""
             }
@@ -587,7 +587,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Marrensberg",
                 "details": "Parkbucht vor Haus Nr. 18"
             }
@@ -602,7 +602,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Marrensdamm",
                 "details": "vor Hausnr. 2 / Sparkasse"
             }
@@ -617,7 +617,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Mathildenstraße",
                 "details": "Bürgersteig bei Supermarkt"
             }
@@ -632,7 +632,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Mozartstraße",
                 "details": "bei Union-Markt"
             }
@@ -647,7 +647,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Mürwiker Straße",
                 "details": "bei Hausnr. 32"
             }
@@ -662,7 +662,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Munketoft",
                 "details": ""
             }
@@ -677,7 +677,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Nane-Jürgensen-Weg",
                 "details": "Hausnr. 26-30 / Holzverschlag"
             }
@@ -692,7 +692,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Nikolaiallee",
                 "details": "ggü. Hausnr. 6 / Exe Parkplatz"
             }
@@ -707,7 +707,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Nikolaus-Matthiesen-Straße",
                 "details": "ggü. Hausnr. 12 / Parkplatz (Verschlag)"
             }
@@ -722,7 +722,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Norderlück",
                 "details": "Ecke Taruper Hauptstraße / Parkplatz"
             }
@@ -737,7 +737,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Osterallee",
                 "details": "Ecke Klosterholzweg"
             }
@@ -752,7 +752,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Richard-Wagner-Straße",
                 "details": "Ecke Beethovenstraße"
             }
@@ -767,7 +767,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Ringstraße",
                 "details": ""
             }
@@ -782,7 +782,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Ringstraße/Himmelberg",
                 "details": ""
             }
@@ -797,7 +797,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Schiffbrücke",
                 "details": "Schifffahrtsmuseum (ggü. Hausnr. 36 im Verschlag) "
             }
@@ -812,7 +812,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Schiffbrücke",
                 "details": "FWN-Parkplatz (ggü. Hausnr. 63 im Verschlag)"
             }
@@ -827,7 +827,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Schleswiger Straße",
                 "details": "Hausnr. 95a / Recyclinghof (TBZ)"
             }
@@ -842,7 +842,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Schleswiger Straße",
                 "details": "Fördepark"
             }
@@ -857,7 +857,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Schleswiger Straße",
                 "details": "Ecke Tegelbark / Parkplatz Autoservice"
             }
@@ -872,7 +872,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Schulze-Delitzsch-Straße",
                 "details": "Ecke Kanzleistraße im Parkstreifen ggü. Garagenhof"
             }
@@ -887,7 +887,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Schulze-Delitzsch-Straße",
                 "details": "bei Hausnr. 34-36 / Parkstreifen"
             }
@@ -902,7 +902,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Selckstraße",
                 "details": "Parkstreifen öffentliche Toiletten"
             }
@@ -917,7 +917,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Solitüde",
                 "details": "Parkplatz Restaurant"
             }
@@ -932,7 +932,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Solitüder Straße",
                 "details": "ggü. Solitüder Bogen"
             }
@@ -947,7 +947,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "St.-Jürgen-Straße",
                 "details": "Ecke Friedastraße /Randstreifen"
             }
@@ -962,7 +962,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Südergraben",
                 "details": "Am Lutherpark / Ecke Friedrichstraße"
             }
@@ -977,7 +977,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Sünderuphof",
                 "details": "Ecke Sünderupweg"
             }
@@ -992,7 +992,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Tastruper Weg",
                 "details": ""
             }
@@ -1007,7 +1007,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Thomas-Fincke-Straße",
                 "details": "Ecke Kanzleistraße"
             }
@@ -1022,7 +1022,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Timm-Kröger-Weg",
                 "details": "Hausnr. 28 / im Verschlag"
             }
@@ -1037,7 +1037,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Toosbüystraße",
                 "details": "ggü. Hausnr. 21 / im Verschlag"
             }
@@ -1052,7 +1052,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Trögelsbyer Weg",
                 "details": "Ecke Merkurstraße / Parkplatz Supermarkt"
             }
@@ -1067,7 +1067,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Twedter Feld",
                 "details": "Hausnr. 14-16 / Parkstreifen"
             }
@@ -1082,7 +1082,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Waitzstraße",
                 "details": "ggü. Hausnr. 38 und Zufahrt Berufsfeuerwehr"
             }
@@ -1097,7 +1097,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Waldstraße",
                 "details": "Parkplatz Agentur für Arbeit"
             }
@@ -1112,7 +1112,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Waldstraße",
                 "details": "neben Hausnr. 45 am Sportplatz / Parkbucht"
             }
@@ -1127,7 +1127,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Wasserlooser Weg",
                 "details": "Ecke Am Goldregen"
             }
@@ -1142,7 +1142,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Wilhelmstraße",
                 "details": "Ecke Augustastraße / Parkplatz"
             }
@@ -1157,7 +1157,7 @@
                 ]
             },
             "properties": {
-                "type": "bottle-bank",
+                "type": "glass_bottle_bin",
                 "location": "Zypressenweg",
                 "details": "Parkstreifen ggü. Oleanderhof"
             }
