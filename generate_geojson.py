@@ -1,19 +1,23 @@
 #!./venv/bin/python
 
 import json
+import click
 
 from geojson import FeatureCollection, Feature, Point
 
 
-def get_data():
-    with open('flensburg_altglas_container.json', 'r') as f:
+def get_data(json_file):
+    with open(json_file, 'r') as f:
         d = json.loads(f.read())
     
     return d
 
 
-def main():
-    d = get_data()
+@click.command()
+@click.argument('json_file')
+@click.argument('geojson_file')
+def main(json_file, geojson_file):
+    d = get_data(json_file)
     fc = []
 
     crs = {
@@ -38,7 +42,7 @@ def main():
 
     c = FeatureCollection(fc, crs=crs)
 
-    with open('flensburg_altglas_container.geojson', 'w') as f:
+    with open(geojson_file, 'w') as f:
         json.dump(c, f, ensure_ascii=False, indent=4)
 
 
