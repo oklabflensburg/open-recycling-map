@@ -1,4 +1,4 @@
-fetch('/flensburg_altglas_container.geojson', {
+fetch('/collection.geojson', {
   method: 'GET'
 })
 .then((response) => {
@@ -65,15 +65,30 @@ function marker(data) {
             })
         },
         pointToLayer: function (feature, latlng) {
-            const label = String(feature.properties.location);
+            const label = String(feature.properties.location)
+            const type = feature.properties.type
+
+            if (type == 'glass_bottle_bin') {
+                marker_icon_file = 'glass_bottles_marker.png'
+                marker_icon_offset = 23
+            }
+            else if (type == 'clothing_bin') {
+                marker_icon_file = 'clothing_bin_marker.png'
+                marker_icon_offset = 0
+            }
+            else {
+                marker_icon_file = 'clothing_bin_marker.png'
+                marker_icon_offset = 0
+            }
+
 
             const customIcon = L.icon({
-                iconUrl: '/assets/marker-icon-orange.png',
+                iconUrl: `/assets/${marker_icon_file}`,
                 shadowUrl: '/assets/marker-shadow.png',
-                iconSize: [25, 41],
-                iconAnchor: [12, 41],
-                tooltipAnchor: [0, -38],
-                shadowSize: [41, 41]
+                iconSize: [30, 43],
+                iconAnchor: [25 + marker_icon_offset, 43],
+                tooltipAnchor: [-11 - marker_icon_offset, -42],
+                shadowSize: [40 + marker_icon_offset, 43]
             });
 
             return L.marker(latlng, {icon: customIcon}).bindTooltip(label, {
