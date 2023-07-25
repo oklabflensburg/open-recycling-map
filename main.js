@@ -62,33 +62,6 @@ function marker(data) {
                 });
 
                 map.setView(e.latlng, 17)
-
-                /*
-                let uart = e.target.feature.properties.uart
-                let ukategorie = e.target.feature.properties.ukategorie
-                let ulichtverh = e.target.feature.properties.ulichtverh
-                let ustrzustan = e.target.feature.properties.ustrzustan
-                let istrad = e.target.feature.properties.istrad
-                let istpkw = e.target.feature.properties.istpkw
-                let istgkfz = e.target.feature.properties.istgkfz
-                let istkrad = e.target.feature.properties.istkrad
-                let istsonstig = e.target.feature.properties.istsonstig
-                let istfuss = e.target.feature.properties.istfuss
-                let utyp1 = e.target.feature.properties.utyp1
-
-                document.getElementById('details').classList.remove('hidden');
-                document.getElementById('uart').innerHTML = uart || '---';
-                document.getElementById('utyp1').innerHTML = utyp1 || '---';
-                document.getElementById('ukategorie').innerHTML = ukategorie || '---';
-                document.getElementById('ulichtverh').innerHTML = ulichtverh || '---';
-                document.getElementById('ustrzustan').innerHTML = ustrzustan || '---';
-                document.getElementById('istrad').innerHTML = istrad || '---';
-                document.getElementById('istpkw').innerHTML = istpkw || '---';
-                document.getElementById('istgkfz').innerHTML = istgkfz || '---';
-                document.getElementById('istkrad').innerHTML = istkrad || '---';
-                document.getElementById('istfuss').innerHTML = istfuss || '---';
-                document.getElementById('istsonstig').innerHTML = istsonstig || '---';
-                */
             })
         },
         pointToLayer: function (feature, latlng) {
