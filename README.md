@@ -1,2 +1,3 @@
-# open-waste-map
-Interaktive Karte mit Standorten für Altglascontainer vom Technisches Betriebszentrum Flensburg
+# Recycling Standorte in Flensburg
+
+Standorte der Recycling Container für Altkleidung und Altglas vom Technisches Betriebszentrum Flensburg.
