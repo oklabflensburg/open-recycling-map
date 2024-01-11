@@ -83,8 +83,8 @@ function marker(data) {
 
 
             const customIcon = L.icon({
-                iconUrl: `/assets/${marker_icon_file}`,
-                shadowUrl: '/assets/marker-shadow.png',
+                iconUrl: `/static/${marker_icon_file}`,
+                shadowUrl: '/static/marker-shadow.png',
                 iconSize: [30, 43],
                 iconAnchor: [25 + marker_icon_offset, 43],
                 tooltipAnchor: [-11 - marker_icon_offset, -42],
