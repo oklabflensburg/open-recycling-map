@@ -15,7 +15,7 @@ fetch('./data/collection.geojson', {
 const map = L.map('map').setView([54.7836, 9.4321], 15);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
+    maxZoom: 20,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 

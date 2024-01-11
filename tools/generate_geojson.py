@@ -33,15 +33,22 @@ def parse_collections(features):
     }
 
     for feature in features:
-        point = Point((float(feature['coords'][0]), float(feature['coords'][1])))
+        idx = [i for i, e in enumerate(fc) if feature['coords'] == e['geometry']['coordinates']]
 
-        properties = {
-            'type': feature['type'],
-            'details': feature['details'],
-            'place': feature['place']
-        }
+        if len(idx) > 0:
+            current_type = feature['type']
+            previous_type = fc[idx[0]]['properties']['type']
+            fc[idx[0]]['properties']['type'] = f'{previous_type},{current_type}'
+        else:
+            point = Point((float(feature['coords'][0]), float(feature['coords'][1])))
 
-        fc.append(Feature(geometry=point, properties=properties))
+            properties = {
+                'type': feature['type'],
+                'details': feature['details'],
+                'place': feature['place']
+            }
+
+            fc.append(Feature(geometry=point, properties=properties))
 
     c = FeatureCollection(fc, crs=crs)
 
