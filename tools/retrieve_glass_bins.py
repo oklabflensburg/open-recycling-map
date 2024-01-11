@@ -47,7 +47,7 @@ def parse_result(content):
                     'coords': [float(ll[1]), float(ll[0])]
                 }
 
-            data.append(d)
+                data.append(d)
 
     return data
 
