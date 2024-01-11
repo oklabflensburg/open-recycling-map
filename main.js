@@ -1,4 +1,4 @@
-fetch('/collection.geojson', {
+fetch('./data/collection.geojson', {
   method: 'GET'
 })
 .then((response) => {
