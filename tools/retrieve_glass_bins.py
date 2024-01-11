@@ -41,14 +41,14 @@ def parse_result(content):
                     del ll[4]
 
                 d = {
-                    'type': 'clothing_bin',
+                    'type': 'glass_bottle_bin',
                     'location': ll[2],
                     'details': ll[3],
                     'coords': [float(ll[1]), float(ll[0])]
                 }
 
-                data.append(d)
-        
+            data.append(d)
+
     return data
 
 
@@ -60,7 +60,7 @@ def write_result(data, dst):
 @click.command()
 @click.argument('dst')
 def main(dst):
-    url = 'https://www.tbz-flensburg.de/Abfallwirtschaft/Alttextilien/'
+    url = 'https://www.tbz-flensburg.de/Abfallwirtschaft/Altglas/'
     content = request_content(url)
     data = parse_result(content)
     write_result(data, dst)
