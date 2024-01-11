@@ -1,23 +1,28 @@
 #!./venv/bin/python
 
-import json
+import glob
 import click
+import json
 
 from geojson import FeatureCollection, Feature, Point
+from pathlib import Path
 
 
-def get_data(json_file):
-    with open(json_file, 'r') as f:
-        d = json.loads(f.read())
-    
-    return d
+def retrieve_collections():
+    files = glob.glob('../data/flensburg_*.json')
+    collection = []
+
+    for file in files:
+        with open(file, 'r') as f:
+            features = json.loads(f.read())
+
+            for feature in features:
+                collection.append(feature)
+
+    return collection
 
 
-@click.command()
-@click.argument('json_file')
-@click.argument('geojson_file')
-def main(json_file, geojson_file):
-    d = get_data(json_file)
+def parse_collections(features):
     fc = []
 
     crs = {
@@ -27,24 +32,33 @@ def main(json_file, geojson_file):
         }
     }
 
-    for o in d:
-        if not o['coords'] or len(o['coords']) != 2:
-            continue
+    for feature in features:
+        point = Point((float(feature['coords'][0]), float(feature['coords'][1])))
 
-        point = Point((float(o['coords'][0]), float(o['coords'][1])))
-            
         properties = {
-            'type': o['type'],
-            'location': o['location'],
-            'details': o['details']
+            'type': feature['type'],
+            'details': feature['details'],
+            'place': feature['place']
         }
 
         fc.append(Feature(geometry=point, properties=properties))
 
     c = FeatureCollection(fc, crs=crs)
 
-    with open(geojson_file, 'w') as f:
-        json.dump(c, f, ensure_ascii=False, indent=4)
+    return c
+
+
+def write_result(data, dst):
+    with open(Path(dst), 'w') as f:
+        json.dump(data, f, ensure_ascii=False)
+
+
+@click.command()
+@click.argument('dst')
+def main(dst):
+    features = retrieve_collections()
+    collection = parse_collections(features)
+    write_result(collection, dst)
 
 
 if __name__ == '__main__':

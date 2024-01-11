@@ -41,8 +41,8 @@ def parse_result(content):
                     del ll[4]
 
                 d = {
-                    'type': 'clothing_bin',
-                    'location': ll[2],
+                    'type': 'clothes',
+                    'place': ll[2],
                     'details': ll[3],
                     'coords': [float(ll[1]), float(ll[0])]
                 }

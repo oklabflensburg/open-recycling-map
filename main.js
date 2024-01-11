@@ -65,7 +65,7 @@ function marker(data) {
             })
         },
         pointToLayer: function (feature, latlng) {
-            const label = String(feature.properties.location)
+            const label = String(feature.properties.place)
             const type = feature.properties.type
 
             if (type == 'glass_bottle_bin') {
