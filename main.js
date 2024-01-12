@@ -137,6 +137,37 @@ function formatAmountOfTrees(amountOfFeatures) {
 }
 
 
+function renderFeatureDetails(feature) {
+    const place = feature.properties.place
+    const details = feature.properties.details
+    const type = feature.properties.type.split(',')
+    console.log(type)
+
+    let detailOutput = ''
+
+    if (type.length > 0) {
+        type_title = type.join(' und ').replace('glass_bottles', 'Altglascontainer').replace('clothes', 'Altkleider-')
+    } else {
+        type_title = type.replace('glass_bottles', 'Altglascontainer').replace('clothes', 'Altkleidercontainer')
+    }
+
+    if (place && details) {
+        place_description = `${place}, ${details}`
+    } else {
+        place_description = place
+    }
+
+    detailOutput += `<li class="py-2 px-2 pt-1 text-xl"><strong>${type_title}</strong></li>`
+    detailOutput += `<li class="last-of-type:pb-2 px-2 pt-2"><strong>Aufstellungsort</strong><br>${place_description}</li>`
+
+    document.querySelector('#details').classList.remove('hidden')
+    document.querySelector('#detailList').innerHTML = detailOutput
+
+    document.querySelector('title').innerHTML = `${type_title} - ${place}`
+    document.querySelector('meta[property="og:title"]').setAttribute('content', `${type_title} - ${place}`)
+}
+
+
 function renderPromise(data, districtId, myLocation) {
     dataObject = data
 
@@ -164,9 +195,8 @@ function renderPromise(data, districtId, myLocation) {
                     left: 0
                 })
 
+                renderFeatureDetails(feature)
                 map.setView(e.latlng, 17)
-
-                // document.querySelector('#details').classList.remove('hidden')
             })
         },
         pointToLayer: function (feature, latlng) {
