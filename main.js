@@ -1,36 +1,52 @@
+let dataObject = null
+let cluster = null
+
 fetch('./data/collection.geojson', {
-  method: 'GET'
+    method: 'GET'
 })
 .then((response) => {
-  return response.json()
+    return response.json()
 })
 .then((data) => {
-  marker(data);
+    renderPromise(data, 0, false)
 })
 .catch(function (error) {
-  console.log(error);
-});
+    console.log(error)
+})
 
+fetch('./data/flensburg_stadtteile.geojson', {
+    method: 'GET'
+})
+.then((response) => {
+    return response.json()
+})
+.then((data) => {
+    addDistrictsLayer(data)
+})
+.catch(function (error) {
+    console.log(error)
+})
 
-const map = L.map('map').setView([54.7836, 9.4321], 15);
+const map = L.map('map').setView([54.7879075, 9.4334885], 13)
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 20,
+    maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);
+}).addTo(map)
 
-let geocoder = L.Control.Geocoder.nominatim();
+let geocoder = L.Control.Geocoder.nominatim()
+let previousSelectedMarker = null
 
 if (typeof URLSearchParams !== 'undefined' && location.search) {
     // parse /?geocoder=nominatim from URL
-    let params = new URLSearchParams(location.search);
-    let geocoderString = params.get('geocoder');
+    let params = new URLSearchParams(location.search)
+    let geocoderString = params.get('geocoder')
 
     if (geocoderString && L.Control.Geocoder[geocoderString]) {
-        console.log('Using geocoder', geocoderString);
-        geocoder = L.Control.Geocoder[geocoderString]();
+        console.log('Using geocoder', geocoderString)
+        geocoder = L.Control.Geocoder[geocoderString]()
     } else if (geocoderString) {
-        console.warn('Unsupported geocoder', geocoderString);
+        console.warn('Unsupported geocoder', geocoderString)
     }
 }
 
@@ -39,65 +55,152 @@ const osmGeocoder = new L.Control.geocoder({
     position: 'topright',
     placeholder: 'Adresse oder Ort',
     defaultMarkGeocode: false
-}).addTo(map);
+}).addTo(map)
 
 osmGeocoder.on('markgeocode', e => {
-    const bounds = L.latLngBounds(e.geocode.bbox._southWest, e.geocode.bbox._northEast);
-    map.fitBounds(bounds);
-});
+    const bounds = L.latLngBounds(e.geocode.bbox._southWest, e.geocode.bbox._northEast)
+    map.fitBounds(bounds)
+})
 
 
-function marker(data) {
-    let markers = L.markerClusterGroup({
-        zoomToBoundsOnClick: true,
-        disableClusteringAtZoom: 17
-    });
+const iconDefault = L.icon({
+    iconUrl: './static/marker-icon-orange.png',
+    shadowUrl: './static/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    tooltipAnchor: [2, -41],
+    shadowSize: [45, 41]
+})
+
+
+const iconHighlight = L.icon({
+    iconUrl: './static/marker-icon-green.png',
+    shadowUrl: './static/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    tooltipAnchor: [2, -41],
+    shadowSize: [45, 41]
+})
+
+
+const queryform = document.querySelector('#form')
+
+if (queryform.length) {
+    queryform.addEventListener('change', (e) => {
+        e.preventDefault()
+
+        let myLocation = false
+        let districtId = 0
+
+        const data = new FormData(queryform)
+        // const districtId = parseInt(data.get('district'))
+
+        myLocation = /^true$/i.test(data.get('myLocation'))
+
+        renderPromise(dataObject, districtId, myLocation)
+    })
+}
+
+
+function getUserLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            lat = position.coords.latitude
+            lng = position.coords.longitude
+
+            L.marker([lat, lng]).addTo(map)
+            map.panTo(new L.LatLng(lat, lng))
+        })  
+    } else {
+        alert('Bitte gebe deinen Standort frei')
+    }
+}
+
+function addDistrictsLayer(data) {
+    L.geoJson(data, {
+        style: {
+            color: '#fff',
+            fillColor: '#185a44',
+            fillOpacity: 0.4,
+            opacity: 0.6,
+            weight: 1
+        }
+    }).addTo(map)
+}
+
+
+function formatAmountOfTrees(amountOfFeatures) {
+    const numberFormat = new Intl.NumberFormat('de-DE');
+    const amount = numberFormat.format(amountOfFeatures)
+
+    return amount
+}
+
+
+function renderPromise(data, districtId, myLocation) {
+    dataObject = data
+
+    if (cluster) {
+        map.removeLayer(cluster)
+    }
+
+    if (myLocation === true) {
+        getUserLocation()
+    }
 
     const geojsonGroup = L.geoJSON(data, {
+        filter: function (feature) {
+            if (feature.properties.district_id === districtId) {
+                return true
+            } else if (districtId === 0) {
+                return true
+            }
+  
+        },
         onEachFeature: function (feature, layer) {
             layer.on('click', function (e) {
-                document.getElementById('filter').scrollTo({
+                document.querySelector('#filter').scrollTo({
                     top: 0,
                     left: 0
-                });
+                })
 
                 map.setView(e.latlng, 17)
+
+                // document.querySelector('#details').classList.remove('hidden')
             })
         },
         pointToLayer: function (feature, latlng) {
-            const label = String(feature.properties.place)
-            const type = feature.properties.type
+            let label = String(feature.properties.place)
 
-            if (type == 'glass_bottle_bin') {
-                marker_icon_file = 'glass_bottles_marker.png'
-                marker_icon_offset = 23
-            }
-            else if (type == 'clothing_bin') {
-                marker_icon_file = 'clothing_bin_marker.png'
-                marker_icon_offset = 0
-            }
-            else {
-                marker_icon_file = 'clothing_bin_marker.png'
-                marker_icon_offset = 0
-            }
-
-
-            const customIcon = L.icon({
-                iconUrl: `/static/${marker_icon_file}`,
-                shadowUrl: '/static/marker-shadow.png',
-                iconSize: [30, 43],
-                iconAnchor: [25 + marker_icon_offset, 43],
-                tooltipAnchor: [-11 - marker_icon_offset, -42],
-                shadowSize: [40 + marker_icon_offset, 43]
-            });
-
-            return L.marker(latlng, {icon: customIcon}).bindTooltip(label, {
+            return L.marker(latlng, {icon: iconDefault}).bindTooltip(label, {
                 permanent: false,
                 direction: 'top'
-            }).openTooltip();
+            }).openTooltip()
         }
-    });
+    })
 
-    markers.addLayer(geojsonGroup);
-    map.addLayer(markers);
+    cluster = L.markerClusterGroup({
+        spiderfyOnMaxZoom: false,
+        showCoverageOnHover: false,
+        disableClusteringAtZoom: 19,
+        maxClusterRadius: 50
+    })
+
+    cluster.on('click', function (a) {
+        if (previousSelectedMarker !== null) {
+            previousSelectedMarker.setIcon(iconDefault)
+        }
+
+        a.layer.setIcon(iconHighlight)
+        previousSelectedMarker = a.layer
+    })
+
+    cluster.addLayer(geojsonGroup)
+    const lengthFeatures = geojsonGroup.getLayers().length
+    const amountOfFeatures = formatAmountOfTrees(lengthFeatures)
+    // document.querySelector('#amountTrees').innerHTML = `Anzahl angezeigter Orte ${amountOfFeatures}`
+
+    map.addLayer(cluster)
+    map.fitBounds(cluster.getBounds(), {padding: [0, 0, 0, 0]})
+    // console.log(cluster.getBounds().getCenter())
 }
