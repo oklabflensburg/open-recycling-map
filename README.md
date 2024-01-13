@@ -9,7 +9,7 @@
 
 ## Hintergrund
 
-Wer kennt es nicht? Man ist neu umgezogen, hat all seine Habseligkeiten dabei, die sich über die Jahre angesammelt haben. Beim Auspacken und Einräumen tauchen plötzlich Tüten mit ungenutzter Kleidung auf. Doch in der neuen Umgebung stellt sich die Frage: Wo befindet sich der nächstgelegene Altkleidercontainer? Hier kommt der Stadtplan mit den Standorten der Altglascontainer und Altkleidercontainer zur Hilfe. Diese Situation hat uns dazu inspiriert, eine interaktive Karte mit den Recycling-Containern für Flensburg umzusetzen.
+Wer kennt es nicht? Man ist frisch umgezogen, hat all seine Habseligkeiten dabei, die sich über die Jahre angesammelt haben. Beim Auspacken und Einräumen tauchen plötzlich Tüten mit ungenutzter Kleidung und alte leere Gläser und Flaschen auf. Doch in der neuen Umgebung stellt sich die Frage: Wo befindet sich der nächstgelegene Recycling Container? Hier kommt unser Stadtplan mit den Standorten der Altglascontainer und Altkleidercontainer zur Hilfe. Diese Situation hat uns dazu inspiriert, eine interaktive Karte mit den Recycling-Containern für Flensburg umzusetzen.
 
 
 ## Datenquelle
