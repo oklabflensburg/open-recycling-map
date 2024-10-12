@@ -11,7 +11,7 @@ fetch('./data/collection.geojson', {
     renderPromise(data, 0, false)
 })
 .catch(function (error) {
-    console.log(error)
+    console.error(error)
 })
 
 fetch('./data/flensburg_stadtteile.geojson', {
@@ -24,7 +24,7 @@ fetch('./data/flensburg_stadtteile.geojson', {
     addDistrictsLayer(data)
 })
 .catch(function (error) {
-    console.log(error)
+    console.error(error)
 })
 
 const map = L.map('map').setView([54.7879075, 9.4334885], 13)
@@ -43,7 +43,6 @@ if (typeof URLSearchParams !== 'undefined' && location.search) {
     let geocoderString = params.get('geocoder')
 
     if (geocoderString && L.Control.Geocoder[geocoderString]) {
-        console.log('Using geocoder', geocoderString)
         geocoder = L.Control.Geocoder[geocoderString]()
     } else if (geocoderString) {
         console.warn('Unsupported geocoder', geocoderString)
@@ -141,14 +140,13 @@ function renderFeatureDetails(feature) {
     const place = feature.properties.place
     const details = feature.properties.details
     const type = feature.properties.type.split(',')
-    console.log(type)
 
     let detailOutput = ''
 
-    if (type.length > 0) {
-        type_title = type.join(' und ').replace('glass_bottles', 'Altglascontainer').replace('clothes', 'Altkleider-')
+    if (type.length > 1) {
+        type_title = type.join(' und ').replace('cat8', 'Altglascontainer').replace('cat7', 'Altkleider-')
     } else {
-        type_title = type.replace('glass_bottles', 'Altglascontainer').replace('clothes', 'Altkleidercontainer')
+        type_title = type[0].replace('cat8', 'Altglascontainer').replace('cat7', 'Altkleidercontainer')
     }
 
     if (place && details) {
@@ -232,5 +230,4 @@ function renderPromise(data, districtId, myLocation) {
 
     map.addLayer(cluster)
     map.fitBounds(cluster.getBounds(), {padding: [0, 0, 0, 0]})
-    // console.log(cluster.getBounds().getCenter())
 }

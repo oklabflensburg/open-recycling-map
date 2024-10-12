@@ -14,7 +14,7 @@ Wer kennt es nicht? Man ist frisch umgezogen, hat all seine Habseligkeiten dabei
 
 ## Datenquelle
 
-Das [TBZ Flensburg](https://www.tbz-flensburg.de/Abfallwirtschaft) stellt auf deren Seite zwei interaktive Karten mit den Standorten der Alttextilienbehälter und Altglascontainer zur Verfügung. Allerdings fehlt dort sowohl eine Suchfunktion für den nächstgelegenen Recycling-Container als auch eine gemeinsame Übersicht beider Themen. Daher haben wir die Daten in ein modernes, maschinenlesbares Format konvertiert, um eine Weiterverarbeitung zu ermöglichen. Diese Kartendarstellung wird von ehrenamtlichen Mitgliedern des OK Lab Flensburgs entwickelt.
+Das [TBZ Flensburg](https://tbz-flensburg.de/de/container-altglas) stellt auf deren Seite interaktive Karten mit den Standorten der Alttextilienbehälter und Altglascontainer zur Verfügung. Allerdings fehlt dort sowohl eine Suchfunktion für den nächstgelegenen Recycling-Container. Daher haben wir die Daten in ein modernes, maschinenlesbares Format konvertiert, um eine Weiterverarbeitung zu ermöglichen. Diese Kartendarstellung wird von ehrenamtlichen Mitgliedern des OK Lab Flensburgs entwickelt.
 
 
 ## Mitmachen
@@ -25,3 +25,19 @@ Du kannst jederzeit ein Issue auf GitHub öffnen oder uns über oklabflensburg@g
 ## Todos
 
 - Fotos der einzelnen Standorte machen und hinzufügen
+
+
+
+## Extract Altkleider Container
+
+
+```sh
+python3 retrieve_geometries.py --url https://tbz-flensburg.de/de/container-altglas --category 7 --target ../data/flensburg_alttextilien_container.json --verbose
+```
+
+
+## Extract Altglas Container
+
+```sh
+python3 retrieve_geometries.py --url https://tbz-flensburg.de/de/container-altglas --category 8 --target ../data/flensburg_altglas_container.json --verbose
+```
