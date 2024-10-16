@@ -29,9 +29,10 @@ fetch('./data/flensburg_stadtteile.geojson', {
 
 const map = L.map('map').setView([54.7879075, 9.4334885], 13)
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+L.tileLayer('https://tiles.oklabflensburg.de/sgm/{z}/{x}/{y}.png', {
+  maxZoom: 20,
+  tileSize: 256,
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map)
 
 let geocoder = L.Control.Geocoder.nominatim()
